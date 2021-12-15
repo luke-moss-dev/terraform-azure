@@ -1,0 +1,10 @@
+---
+subscription_name: Azure Virtual Desktop  # Required
+subscription_id:  # Required
+
+resource_groups:
+  avd_rg:
+    location: southcentralus
+...
+
+

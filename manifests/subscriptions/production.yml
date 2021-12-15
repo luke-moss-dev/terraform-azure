@@ -1,0 +1,11 @@
+---
+subscription_name: Production # Required
+subscription_id:  # Required
+
+resource_groups:
+  production_rg: 
+    location: westus
+    tags: 
+      environment: thisisproduction
+
+...

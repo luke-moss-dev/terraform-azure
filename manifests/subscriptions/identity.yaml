@@ -1,0 +1,17 @@
+---
+subscription_name: Identity  # Required
+subscription_id:  # Required
+
+resource_groups:
+  identity_rg:
+    location: eastus
+  identity_rg1:
+    location: westus
+
+virtual_networks:
+  vnet_awesome:
+    resource_group_key: identity_rg
+    address_space:
+      - 10.10.0.0/23
+
+...

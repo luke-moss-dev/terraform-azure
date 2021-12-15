@@ -1,0 +1,17 @@
+---
+subscription_name: Connectivity  # Required
+subscription_id:  # Required
+
+resource_groups:
+  conn_rg: 
+    location: eastus
+    tags: 
+      environment: thisismeconnectivity
+
+virtual_networks:
+  vnet_conn:
+    resource_group_key: conn_rg # Required
+    address_space:   # Required
+      - 10.10.32.0/19
+
+...
